@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>Cornell</title>
+</head>
+<body>
+    <div class="container">
+        <div id="titulo">
+            <h1>Método de Cornell</h1>
+            <input type="date" name="bday">
+        </div>
+
+        <div id="topicos">
+            <input type="text" id="topico" placeholder="Escreva um tópico">
+            <button><span onclick="novoTopico()" class="botaoAdd">Adicionar</span></button>
+            <ul id="listaTopicos" contenteditable="true">
+                <li></li>
+            </ul>
+        </div>
+
+        <div id="anotacoes">
+            <input type="text" id="notas" placeholder="Escreva uma nota">
+            <button><span onclick="novoNotas()" class="botaoAdd">Adicionar</span></button>
+            <ul id="listaNotas">
+                <li></li>
+            </ul>
+        </div>
+
+        <div id="resumo">
+            <input type="text" id="resumos" placeholder="Escreva um resumo">
+            <button><span onclick="novoResumo()" class="botaoAdd">Adicionar</span></button>
+            <ul id="listaResumo">
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+.container{
+    display: grid;
+    height: 100vh;
+    width: 95vh;
+    margin:auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.9fr 0.5fr;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "topicos anotacoes anotacoes"
+    "resumo resumo resumo";
+    grid-gap: 0.2rem;
+}
+
+#titulo{
+    background-color: bisque;
+    grid-area: titulo;
+    display: flex;
+    justify-content: space-around;
+}
+
+#titulo input{
+    margin: 20px;
+}
+
+#topicos{
+    background-color: #74b9ff;
+    grid-area: topicos;
+}
+
+#anotacoes{
+    background-color: #0984e3;
+    grid-area: anotacoes;
+}
+
+#resumo{
+    background-color: #6c5ce7;
+    grid-area: resumo;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+    list-style-type: none;
+}
+ 
+.close {
+    position: relative;
+    right: 0;
+    top: 0;
+    padding: 2px 4px 2px 4px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+  
+.botaoAdd{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    /*text-shadow: 1px 2px 3px black;*/
+    color: black;
+}
+
+input{
+    margin: 10px;
+}
+
+button{
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color:bisque;
+}
